@@ -1,0 +1,20 @@
+/* Khi màn hình nhỏ hơn 768px */
+@media (max-width: 768px) {
+  .cartTab {
+    width: 300px; /* Giảm chiều rộng của tab */
+  }
+}
+
+/* Khi màn hình nhỏ hơn 480px */
+@media (max-width: 480px) {
+  .cartTab {
+    width: 100%; /* Sử dụng toàn bộ chiều rộng màn hình */
+    right: 0;
+    grid-template-rows: 70px 1fr 90px 50px;
+    right: -100%;
+    transition: 0.5s;
+  }
+  body.activeTabCart .container {
+    transform: translateX(-80%);
+  }
+}
