@@ -1,12 +1,14 @@
 let iconCart = document.querySelector(".iconCart");
 let closeBtn = document.querySelector(".cartTab .close");
 let body = document.querySelector("body");
+
 iconCart.addEventListener("click", () => {
   body.classList.toggle("activeTabCart");
 });
 closeBtn.addEventListener("click", () => {
   body.classList.toggle("activeTabCart");
 });
+
 function formatNumber(num) {
   let parts = num.toString().split(".");
   parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -32,12 +34,13 @@ function addDataToHTML() {
           <img src="${product.image}" />
           <h2>${product.name}</h2>
           <div class="price">${formatNumber(product.price)} VNĐ</div>
-          <button onclick="addCart(${product.id})">Add to Cart</button>
+          <button onclick="addCart(${product.id})">Thêm vào giỏ hàng</button>
       `;
       listProductHTML.appendChild(newProduct);
     });
   }
 }
+
 let listCart = [];
 
 function checkCart() {

@@ -81,13 +81,15 @@ header .totalQuantity {
   left: 50%;
   background-color: #209a88;
   color: #fff;
-  width: 60%;
+  width: 65%;
+  min-height: 15%;
   border: none;
   padding: 25px 20px;
   box-shadow: 0 10px 50px #000;
   cursor: pointer;
   transform: translateX(-50%) translateY(100px);
   opacity: 0;
+  font-size: 16px;
 }
 .listProduct .item:hover button {
   transition: 0.5s;
